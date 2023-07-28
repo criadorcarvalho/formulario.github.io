@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Lato:wght@300&family=Oxanium:wght@300;400;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>formulario</title>
+</head>
+<body>
+
+    <main class="container-formulario">
+
+        <h1 id="title">Pesquisa de Satisfação da Empresa</h1>
+
+        <p id="description">nós ajude a continuar fazendo um bom trabalho com a nassa pesquisa?</p>
+        
+        <form class="form" id="survey-form" method="post" action="">
+
+            <fieldset class="input-label">
+                <div class="input">
+                    <label id="name-label" for="name">Nome<input id="name" type="text" placeholder="Digite Seu Nome" required></label>
+                </div>
+
+                <div class="input">
+                    <label id="email-label" for="email">E-mail<input id="email" type="email" placeholder="Digite Seu E-mail" required></label>
+                </div>
+
+                <div class="input">
+                    <label id="number-label" for="number">Idade<input id="number" type="number" min="14" max="80" placeholder="Digite Sua Idade"></label>
+                </div>
+               
+           </fieldset><!--input-label-->
+
+            <hr style="border: 1px solid #ccc;">
+
+
+            <fieldset class="input-label">
+
+                <h3>Como você descreveria seu nível geral de satisfação no trabalho?</h3>
+
+                <div class="input-2">
+                    <label for="a"><input name="cir" id="a" type="checkbox" value="cir"> Muito satisfeito</label>
+                </div>
+
+                <div class="input-2">
+                    <label for="b"><input name="cir" id="b" type="checkbox" value="cir"> Satisfeito de alguma forma
+                    </label>
+                </div>
+
+                <div class="input-2">
+                    <label for="c"><input name="cir" id="c" type="checkbox" value="cir" required> Neutro</label>
+                </div>
+
+
+                <div class="input-2">
+                    <label for="d"><input name="cir" id="d" type="checkbox" value="cir" required> Um pouco insatisfeito</label>
+                </div>
+
+
+                <div class="input-2">
+                    <label for="e"><input name="cir" id="e" type="checkbox" value="cir" required> Muito Insatisfeito</label>
+                </div>
+    
+            </fieldset><!--input-label-->
+
+            <hr style="border: 1px solid #ccc;">
+
+            <fieldset class="input-label">
+                <h3>Seu trabalho lhe causa estresse ou ansiedade?</h3>
+                <div class="input-2">
+                    <label for="cir"><input name="cir" id="cir" type="radio" value="cir"> Sim</label>
+                </div>
+
+                <div class="input-2">
+                    <label for="cir"><input name="cir" id="cir" type="radio" value="cir"> Não</label>
+                </div>
+
+                <div class="explique">
+                    <label for="cir">Se sim, por favor explique <input name="cir" id="cir" type="text" value="" placeholder="Por favor Explique" required></label>
+                </div>
+    
+           </fieldset><!--input-label-->
+               
+            <hr style="border: 1px solid #ccc;">
+          
+            <fieldset class="input-label-2">
+                
+                <label class="lab" for="dropdown"> qual dessas opções você gostaria que melhorasse na empresa?
+                    <select name="acao-1" id="dropdown">
+                        <option name="acao"   value="">(selecione)</option> 
+                        <option name="acao"  value="escolha">Benefícios gerais</option>
+                        <option name="acao" value="escolha">Benefícios para a saúde</option>
+                        <option name="acao" value="escolha">Ambiente físico de trabalho</option>
+                        <option name="acao" value="escolha">Ambiente físico de trabalho</option>
+                        <option name="acao" value="escolha">Oportunidades de avanço</option>
+                    </select>
+                </label>
+ 
+            </fieldset><!--input-label-->
+
+            <fieldset style=" margin-top: 0;">
+                <label id="" class="" for="texto">Notas e feedback adicionais </label>
+                <textarea name="dig" id="texto" placeholder="Digite Aqui"></textarea>
+            </fieldset>
+
+            <hr style="border: 1px solid #ccc;">
+
+            <fieldset class="input-label">
+                <h3>escolha uma conta e aceite os termos e condições</h3>
+                <div class="input-2">
+                    <label id="1" for="1"><input name="cir" id="name" type="radio" value="cir"> conta pessoal</label>
+                </div>
+
+                <div class="input-2">
+                    <label id="2" for="2"><input name="cir" id="email" type="radio" value="cir"> conta de negorcio</label>
+                </div>
+
+                <div class="input-2">
+                    <label id="3" for="3"><input name="cir" type="checkbox" value="cir" required> eu aceito <a href="">os termos e condições</a></label>
+                </div>
+    
+            </fieldset><!--input-label-->
+               
+            <hr style="border: 1px solid #ccc;">
+
+            <div class="submit">
+                <input id="submit" type="submit" name="" value="eniviar">
+            </div>
+
+
+        </form>
+    </main><!--container-formulario-->
+
+</body>
+</html>

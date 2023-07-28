@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.container-formulario{
+    text-align: center;
+    width: 100%;
+    max-width: 1280px;
+    padding: 20px 3%;
+    margin: 60px auto;
+}
+
+.container-formulario h1{
+    font-size: 29px;
+    text-transform: uppercase;
+}
+
+.container-formulario p{
+    font-size: 13px;
+    text-transform: uppercase;
+    padding-top: 18px;
+}
+
+.form{
+    width: 100%;
+    max-width: 550px;
+    padding: 20px 10px;
+    text-align: left;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+}
+
+fieldset{
+    border: 0;
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+
+fieldset:nth-of-type(1){margin-top: 0; }
+
+.input{
+    padding-bottom: 20px;
+}
+
+.input input[type=text],
+.input input[type=email],
+.input input[type=number],
+textarea,
+select{
+    outline: none;    
+}
+
+.input input[type=text],.input input[type=email],.input input[type=number]{
+    width: 100%;
+    margin-top: 5px;
+    padding: 10px 13px;
+    border: 1px solid #ccc;
+}
+
+label{
+    text-transform: capitalize;
+}
+
+select{
+    width: 100%;
+    padding: 8px 13px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+.input-2{
+    font-size: 14px;
+    margin: 5px 0;
+    text-transform: capitalize;
+}
+
+input[type=text]{
+    width: 100%;
+    padding: 10px 13px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:link{
+    color: rgb(255, 0, 0);
+}
+
+a:hover{
+    color: hotpink;
+}
+
+a:active{
+    color: rgb(0, 0, 255);
+}
+
+h3{
+    padding-top: 0px;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+}
+
+textarea{
+    width: 100%;
+    height: 150px;
+    padding: 10px 13px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    resize: vertical;
+    border: 1px solid #ccc;
+}
+
+.submit{
+    text-align: center;
+    padding-top: 40px;
+}
+
+.submit input[type=submit]{
+    width: 100%;
+    max-width: 320px;
+    height: 45px;
+    cursor: pointer;
+    font-size: 19px;
+    text-transform: uppercase;
+    background-color: rgb(137, 137, 143);
+    border: 0;
+    border-bottom: 3px solid black;
+    box-shadow: 10px 10px 10px 5px rgb(0, 0, 0);
+}
+
+@media screen and (max-width: 450px) {
+    .container-formulario h1{
+        font-size: 25px;
+        text-align: center;
+
+    }
+    
+    .container-formulario p{
+        font-size: 12px;
+        text-align: center;
+    }
+    
+    fieldset.input-label h3{
+        text-align: center;
+    }
+
+    .lab{
+        display: inline-block;
+        text-align: center;
+    }
+}
